@@ -25,8 +25,8 @@ const Header = () => {
 
     return (
         <React.Fragment>
-            <Box component="header" position="relative" bgcolor={'#171717'} className='full'>
-                <Box component="nav" position="absolute" width="100%" >
+            <Box component="header" position="relative" bgcolor={'#171717'} className='for-width'>
+                <Box component="nav" position="absolute" width="100%">
                     <Container maxWidth='xlg' className='px-5'>
                         <Grid container flexDirection="row" alignItems="center">
                             <Tooltip TransitionComponent={Zoom} title='Jayanth'>
