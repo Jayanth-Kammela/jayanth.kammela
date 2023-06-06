@@ -1,0 +1,66 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.skill-card{
+  background-color: #0a1628;
+  width: 100%;
+  /* height: 106.3vh; */
+}
+.custom-pad{
+  padding: 100px 0px 100px 0px;
+}
+.customtxt{
+  color:#b0a6a6;
+  font-size: 20px;
+}
+.custonborder{
+  border: 1.5px #565656 solid;
+  border-radius: 8px;
+  /* border-radius: 0px 14px 0px 14px; */
+}
+.html-svg{
+  color: #f06529;
+  transform: scale(2);
+}
+.css-svg{
+  color: #264de4;
+  transform: scale(2);
+
+}
+.bootstrap-svg{
+  color:#550dfd ;
+  transform: scale(2);
+}
+.js-svg{
+  transform: scale(2);
+  color:#f0db4f;
+}
+.react-svg{
+  color: #7cc5d9;
+  transform: scale(2);
+}
+.mui-svg{
+  transform: scale(2);
+  color:#0021bf;
+}
+.exp-svg{
+  transform: scale(2);
+  color:#ffff;
+}
+.mongo-svg{
+  transform: scale(2);
+  color:#4db33d;
+}
+.custom-img{
+  width:'200px';
+  height:'200px';
+}
+img {
+  border-radius: 50%;
+  background: #dddada;
+  box-shadow: -5px -5px 30px #bcb9b9,
+    10px 10px 30px #cccbcb;
+}
+
