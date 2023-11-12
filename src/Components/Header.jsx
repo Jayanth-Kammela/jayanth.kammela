@@ -15,14 +15,6 @@ const Header = () => {
         },
     }));
 
-    const Title = styled(Typography)(({ theme }) => ({
-        fontSize: "64px",
-        margin: theme.spacing(4, 0, 4, 0),
-        [theme.breakpoints.down("sm")]: {
-            fontSize: "40px",
-        },
-    }));
-
     return (
         <React.Fragment>
             <Box component="header" position="relative" bgcolor={'#171717'} className='for-width'>
@@ -42,7 +34,17 @@ const Header = () => {
                                 </Typography>
                             </Tooltip>
                             <Box color={'#b0a6a6'} sx={{ display: { xs: "block", lg: "block" }, ml: "auto" }} >
-                                <Box href='https://www.linkedin.com/in/jayanth-kammela-293b44242' component={Button} color={'white'}>
+                                <Box href='https://www.linkedin.com/in/jayanth-kammela-293b44242' component={'a'} color={'white'} target='_blank'>
+                                    <svg className="ms-2"
+                                        viewBox="0 0 1024 1024"
+                                        fill="currentColor"
+                                        height="1.4em"
+                                        width="1.4em"
+                                    >
+                                        <path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0068.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z" />
+                                    </svg>
+                                </Box>
+                                <Box href='https://www.linkedin.com/in/jayanth-kammela-293b44242' component={'a'} color={'white'} target='_blank'>
                                     <svg className="ms-2"
                                         viewBox="0 0 1024 1024"
                                         fill="currentColor"
@@ -52,7 +54,7 @@ const Header = () => {
                                         <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1168.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z" />
                                     </svg>
                                 </Box>
-                                <Box href='https://github.com/Jayanth-Kammela' component={Link} color={'white'}>
+                                <Box href='https://github.com/Jayanth-Kammela' component={'a'} color={'white'} target='_blank'>
                                     <svg className="ms-2"
                                         viewBox="0 0 1024 1024"
                                         fill="currentColor"
@@ -67,32 +69,32 @@ const Header = () => {
                     </Container>
                 </Box>
 
-                <Box sx={{ backgroundColor: "#171717", minHeight: "85vh", paddingTop: '1em', marginLeft: '0.7em' }} padding={5}>
+                <Box sx={{ backgroundColor: "#171717", minHeight: "60vh", paddingTop: '1em', marginLeft: '0.7em' }} padding={2.2}>
                     <Container>
                         <CustomBox>
-                            <Box sx={{ flex: "1" }} marginRight={'2em'}>
+                            <Box sx={{ flex: "1", mt: 16 }} marginRight={'2em'}>
                                 <motion.div
                                     initial={{ opacity: 0, y: 100 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 1, duration: 1 }}
                                 >
-                                    <Typography variant="h2" color="#b0a6a6" sx={{ fontWeight: "500", mt: 10, mb: 4, }}>Hi, I am Jayanth,</Typography>
+                                    <Typography variant="p" color="#b0a6a6" sx={{ fontWeight: "500", mt: 100, mb: 4, fontSize: '55px' }}>Hi, I am Jayanth,</Typography>
                                 </motion.div>
                                 <motion.div
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 1.5, duration: 1 }}
                                 >
-                                    <Title variant="h2" color="primary">Frontend Developer</Title>
-                                    <Typography variant="body2" sx={{ fontSize: "18px", color: "#5A6473" }}>Passionate about crafting seamless User Interfaces and constantly expanding Frontend Skills</Typography>
+                                    <Typography variant='p' component={'p'} className='title'>FullStack Developer</Typography>
+                                    <Typography variant="p" sx={{ fontSize: "18px", color: "#5A6473" }}>Passionate about crafting seamless User Interfaces and constantly expanding Skills</Typography>
                                 </motion.div>
                             </Box>
-                            <Box sx={{ flex: "1.1", mt: 1, mb: 4 }}>
+                            <Box sx={{ mt: 1, mb: 4 }}>
                                 <motion.img
                                     className='rounded-pill'
-                                    src={`${first}?w=164&h=164&fit=crop&auto=format`}
+                                    src={`${first}`}
                                     alt="Jay"
-                                    style={{ maxWidth: "100%", marginTop: "2rem", width: '420px', height: '400px' }}
+                                    style={{ maxWidth: "100%", marginTop: "2rem", width: 400, height: '400px' }}
                                     initial={{ opacity: 0, scale: 0 }}
                                     animate={{ opacity: 1, scale: 1 }}
                                     transition={{ delay: 1.2, duration: 1 }}

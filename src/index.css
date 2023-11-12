@@ -1,69 +1,110 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
 }
-.skill-card{
-  background-color: #0a1628;
+
+.title {
+  font-size: 52px;
+  color: #435585;
+}
+
+.cardx {
+  width: 280px;
+  height: auto;
+  padding: 18px;
+  background-color: #393E46;
+  border-radius: 8px;
+  opacity: 60%;
+  margin: 20px !important;
+}
+
+.veggiapp {
+  width: 200px;
+  height: 400px;
+}
+
+.html {
+  border: 1px solid #6499E9;
+  padding: 6px;
+  border-radius: 8px;
+  color: #FFFF;
+  margin: 8px 4px;
+  opacity: 120%;
+}
+
+.skill-card {
+  background-color: #171717;
   width: 100%;
   /* height: 106.3vh; */
 }
-.custom-pad{
+
+.custom-pad {
   padding: 100px 0px 100px 0px;
 }
-.customtxt{
-  color:#b0a6a6;
+
+.customtxt {
+  color: #b0a6a6;
   font-size: 20px;
 }
-.custonborder{
+
+.custonborder {
   border: 1.5px #565656 solid;
   border-radius: 8px;
   /* border-radius: 0px 14px 0px 14px; */
 }
-.html-svg{
-  color: #f06529;
-  transform: scale(2);
-}
-.css-svg{
-  color: #264de4;
-  transform: scale(2);
 
+.custom-img {
+  width: '200px';
+  height: '200px';
 }
-.bootstrap-svg{
-  color:#550dfd ;
-  transform: scale(2);
-}
-.js-svg{
-  transform: scale(2);
-  color:#f0db4f;
-}
-.react-svg{
-  color: #7cc5d9;
-  transform: scale(2);
-}
-.mui-svg{
-  transform: scale(2);
-  color:#0021bf;
-}
-.exp-svg{
-  transform: scale(2);
-  color:#ffff;
-}
-.mongo-svg{
-  transform: scale(2);
-  color:#4db33d;
-}
-.custom-img{
-  width:'200px';
-  height:'200px';
-}
-img {
+
+/* img {
   border-radius: 50%;
   background: #dddada;
   box-shadow: -5px -5px 30px #bcb9b9,
     10px 10px 30px #cccbcb;
+} */
+
+.for-width {
+  padding-top: 2em;
 }
 
-.for-width{
-  padding-top: 2em;
+.veggiapp {
+  width: 280px;
+  height: 280px;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+
+.projectcard {
+  transition: 0.8s;
+  margin: 1.4em;
+  cursor: pointer;
+  position: relative;
+}
+
+.projectcard:hover {
+  scale: 1.08;
+  transition: 0.8s ease-out;
+}
+
+.hover-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 17, 17, 0.5);
+  display: none;
+  color: #FFFF;
+}
+
+.projectcard:hover .hover-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
