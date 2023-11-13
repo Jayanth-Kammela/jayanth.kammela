@@ -34,7 +34,7 @@ const Header = () => {
                                 </Typography>
                             </Tooltip>
                             <Box color={'#b0a6a6'} sx={{ display: { xs: "block", lg: "block" }, ml: "auto" }} >
-                                <Box href='https://www.linkedin.com/in/jayanth-kammela-293b44242' component={'a'} color={'white'} target='_blank'>
+                                <Box onClick={() => window.location.href = 'mailto:chintu78299@gmail.com'} component={Button} color={'white'}>
                                     <svg className="ms-2"
                                         viewBox="0 0 1024 1024"
                                         fill="currentColor"
